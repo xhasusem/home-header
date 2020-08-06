@@ -5,32 +5,56 @@
 --color-red: #E91B1E;
 }
 
-i.icon {
-    display: inline-block;
-    vertical-align: middle;
-    width: 16px;
-    height: 16px;
-    background-color: dimgray;
-    border-radius: 2px;
-}
-
-
-/*  */
+/* nav icon */
 .nav-icon {
     display: block;
     width: 24px;
+    cursor: pointer;
 }
 .nav-icon span {
     display: block;
     height: 2px;
     border-radius: 2px;
     background-color: var(--color-red);
+}
+.nav-icon span:first-child {
     margin-bottom: 8px;
 }
 .nav-icon span:last-child {
-    margin-bottom: 0;
+    margin-top: 8px;
 }
 
+.nav-btn {
+    position: fixed;
+    right: 26px;
+    bottom: 26px;
+    z-index: 20;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--color-red);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: .9;
+    transition: opacity 400ms ease-out;
+    box-shadow: 0 10px 20px rgba(233, 27, 30, .3);
+}
+.nav-btn:hover {
+    opacity: 1;
+}
+.nav-btn .nav-icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-btn span {
+    background-color: white;
+}
+
+/* header */
 .header {
     position: relative;
     z-index: 10;
@@ -224,9 +248,8 @@ i.icon {
 }
 
 .toolbar-item .icon {
-    width: auto;
-    height: auto;
-    background: none;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .header-subnav {
@@ -384,6 +407,106 @@ i.icon {
     font-size: 18px;
     /* font-family: sans-serif; */
     /* font-weight: 300; */
+    color: #707070;
+}
+
+/* header mobile aside search */
+.header-aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.aside-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+
+    display: flex;
+    
+    background: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(12px);
+}
+.aside-box.compact {
+    max-width: 330px;
+    right: 85px;
+}
+
+.aside-wrap {
+    padding: 16px 20px;
+    flex-grow: 1;
+}
+
+.aside-brand {
+    width: 36px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+.aside-nav {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.aside-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DDD;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.aside-item:focus {
+    outline: none;
+}
+
+.aside-item span {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px 0;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1;
+    /* font-family: sans-serif; */
+    /* font-weight: 400; */
+    color: #AAA;
+    text-decoration: none;
+}
+
+.aside-item i.icon {
+    display: inline-block;
+    vertical-align: middle;
+    color: #707070;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.aside-info {}
+.aside-social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.aside-social .social-label {
+    margin-right: 10px;
+    /* font-weight: 500; */
+}
+.aside-social .social-icon {
+    border-color: #707070;
+    margin-right: 16px;
+}
+.aside-social .social-icon:last-child {
+    margin-right: 0;
 }
 
 /* search */
@@ -393,17 +516,32 @@ i.icon {
 }
 
 .search-box .icon {
-    width: auto;
-    height: auto;
+    display: inline-block;
+    vertical-align: middle;
     font-size: 28px;
-    background: none;
+    cursor: pointer;
+}
+
+.search-icon {
+    position: relative;
+    color: #E91B1E;
+}
+.search-icon.disabled {
+    color: #707070;
+    opacity: .4;
+}
+.search-icon .icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 28px;
     cursor: pointer;
 }
 
 .search-tool {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 52px;
     display: flex;
+    align-items: flex-end;
 }
 
 .search-brand {
@@ -411,8 +549,34 @@ i.icon {
     flex: 0 0 45px;
 }
 
+.search-brand svg {
+    display: block;
+    margin-bottom: 0;
+}
+
 .search-control {
     flex: 1 1 auto;
+    align-self: stretch;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.search-control input[type="text"] {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #707070;
+    box-sizing: border-box;
+    font-size: 18px;
+    /* font-family: sans-serif; */
+    /* font-weight: 400; */
+    color: #707070;
+}
+
+.search-control input[type="text"]:focus {
+    outline: none;
+    border-color: black;
 }
 
 .search-icon {
