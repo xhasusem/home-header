@@ -1,10 +1,3 @@
-/* root */
-:root {
---color-grey-light: #FCFCFC;
---color-grey-dark: #1F1F1F;
---color-red: #E91B1E;
-}
-
 /* nav icon */
 .nav-icon {
     display: block;
@@ -15,7 +8,7 @@
     display: block;
     height: 2px;
     border-radius: 2px;
-    background-color: var(--color-red);
+    background-color: #E91B1E;
 }
 .nav-icon span:first-child {
     margin-bottom: 8px;
@@ -32,7 +25,7 @@
     width: 50px;
     height: 50px;
     cursor: pointer;
-    background-color: var(--color-red);
+    background-color: #E91B1E;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -118,7 +111,7 @@
     max-width: 100%;
     width: 100%;
     height: auto;
-    fill: var(--color-red);
+    fill: #E91B1E;
 }
 
 .header-panel {
