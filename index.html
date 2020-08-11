@@ -6,15 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
 
+    <style>
+        body {
+            min-height: 200vh;
+        }
+        .actions {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            text-align: center;
+            z-index: 100;
+        }
+    </style>
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/header.css">
 </head>
 
-<body>
+<body class="theme-dark">
     <header class="header">
-        <div class="">
+        <div id="openHandler" class="">
             <!-- component -->
+
+            <div class="header-sticky">
+                <div class="header-section">
+                    <div class="sticky-bar">
+                        <div class="sticky-item">
+                            <div>
+                                <div class="sticky-brand">
+                                    <svg viewBox="0 0 226 226">
+                                        <g>
+                                            <rect x="0" fill="#E91B1E" width="226" height="226" />
+                                            <path fill="white" d="M165,142.3c0,27.9-24.6,42.2-49,42.2c-19.3,0-33.8-9-42.8-19.5l-4.3,17.2H61v-40.4h8.6 c8.4,18.4,26.4,27.1,41.4,27.1c12.3,0,22.3-5.9,22.3-17.2c0-12.9-12.7-17.4-30.1-25.8c-17.8-8.6-38.9-18.7-38.9-44.5 c0-25.6,20.9-40,45.3-40c18.2,0,29.5,8,36.1,14.8l3.5-14.8h7.8v37.7h-8.6C142.6,63,126.6,56,113.3,56c-10.9,0-19.5,4.7-19.5,14.6 c0,13.1,15.4,18.2,33.6,27.1C146.1,106.6,165,118.1,165,142.3z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="nav-icon">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sticky-item">
+
+                        </div>
+                        <div class="sticky-item">
+                            <div class="sticky-tool">
+                                <div class="header-login">Iniciar sesión</div>
+                                <div class="header-subscribe">
+                                    <span><i class="icon icon-icon36"></i></span>
+                                    <span>Suscribirse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="header-wrapper">
 
                 <div class="header-box">
@@ -28,7 +79,7 @@
                                     <span></span>
                                 </div>
                                 <div class="info-datetime">
-                                    <i class="icon"></i>
+                                    <i class="icon icon-icon37"></i>
                                     <span>Lunes, 18 mayo 2020</span>
                                 </div>
                             </div>
@@ -52,19 +103,23 @@
                                 </svg>
                             </div>
                             <div class="header-panel">
-                                <div class="panel-item">
-                                    <span>Iniciar sesión</span>
+                                <div class="panel-item hidden-lg">
+                                    <span class="header-login">Iniciar sesión</span>
                                 </div>
-                                <div class="panel-item">
-                                    <button>Suscribirse</button>
+                                <div class="panel-item hidden-lg">
+                                    <button class="header-btn">Suscribirse</button>
                                 </div>
-                                <div class="panel-item">
+                                <div class="panel-item panel-tool">
+                                    <div class="sound-box">
+                                        <div class="icon icon-icon03"></div>
+                                    </div>
                                     <div class="search-box">
                                         <i class="icon icon-icon60"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="sticky-observer"></div>
                         <div class="header-nav">
                             <nav class="header-navbar">
                                 <div class="navbar-item active">
@@ -79,11 +134,11 @@
                                 <div class="navbar-item">
                                     <span>Impresa</span>
                                 </div>
-                                <div class="navbar-item">
+                                <div class="navbar-item hidden-md">
                                     <span>Más +</span>
                                 </div>
                             </nav>
-                            <nav class="header-toolbar">
+                            <nav class="header-toolbar hidden-lg">
                                 <div class="toolbar-item active">
                                     <span>Escuchar radio</span>
                                     <i class="icon icon-icon03"></i>
@@ -249,7 +304,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div>            
 
             <div class="header-aside compact">
 
@@ -337,7 +392,24 @@
                                 <i class="icon icon-icon68"></i>
                             </div>
                         </div>
-                        <div class="aside-info"></div>
+                        <div class="aside-info">
+                            <div class="info-user">
+                                <div class="user-icon">
+                                    <i class="icon icon-icon59"></i>
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Juan Pablo Amaya D.</div>
+                                    <div class="user-email">
+                                        <span>jamayad@semana.com</span> -
+                                        <span class="label">ver preferencias</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-actions">
+                                <button class="header-btn">Suscribirse</button>
+                                <div class="header-login">Iniciar sesión</div>
+                            </div>
+                        </div>
                         <div class="aside-social">
                             <div class="social-label">Síganos:</div>
                             <a href="#" class="social-icon">
@@ -458,6 +530,46 @@
             <!-- end component -->
         </div>
     </header>
+
+    <div class="actions">
+        <button data-toggle="open-plus" id="openPlus">Plus</button>
+        <button data-toggle="open-menu" id="openMenu">Menu</button>
+        <button data-toggle="open-compact" id="openCompact">Compact</button>
+    </div>
+
+    <script>
+        (function(){
+            const plusButton = document.getElementById('openPlus');
+            const menuButton = document.getElementById('openMenu');
+            const compactButton = document.getElementById('openCompact');
+
+            const openHandler = document.getElementById('openHandler');
+
+            [plusButton, menuButton, compactButton].forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    if (e.target != el) return ;
+
+                    openHandler.classList.toggle('open')
+                    openHandler.classList.toggle(el.dataset.toggle)
+
+                }, false)
+            });
+            
+            window.addEventListener('scroll', () => {
+                let stickyObserver = document.querySelector('.sticky-observer');
+                let scrolled = window.pageYOffset || document.documentElement.scrollTop;
+                let diffTop = stickyObserver.offsetTop;
+                if( scrolled >= diffTop + 24  ) {
+                    openHandler.classList.add('isSticky');
+                }
+                else {
+                    openHandler.classList.remove('isSticky');
+                }
+            })
+
+        })()
+    </script>
 </body>
 
 </html>

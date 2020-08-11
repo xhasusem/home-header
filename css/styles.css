@@ -1,1083 +1,1144 @@
 @font-face {
-    font-family: 'SemanaSans-Regular';
-    font-display: swap;
-    src: local('SemanaSans-Regular'),
-      url('../fonts/sans/WOFF2/SemanaSans-Regular.woff2') format('woff2'),
-      url('../fonts/sans/WOFF/SemanaSans-Regular.woff') format('woff'),
-      url('../fonts/sans/TTF/SemanaSans-Regular.ttf') format('truetype'),
-      url('../fonts/sans/OTF/SemanaSans-Regular.otf') format('opentype'),
-      url('../fonts/sans/EOT/SemanaSans-Regular.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-Thin';
-    font-display: swap;
-    src: local('SemanaSans-Thin'),
-      url('../fonts/sans/WOFF2/SemanaSans-Thin.woff2') format('woff2'),
-      url('../fonts/sans/WOFF/SemanaSans-Thin.woff') format('woff'),
-      url('../fonts/sans/TTF/SemanaSans-Thin.ttf') format('truetype'),
-      url('../fonts/sans/OTF/SemanaSans-Thin.otf') format('opentype'),
-      url('../fonts/sans/EOT/SemanaSans-Thin.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-Medium';
-    font-display: swap;
-    src: local('SemanaSans-Medium'),
-      url('../fonts/sans/WOFF2/SemanaSans-Medium.woff2') format('woff2'),
-      url('../fonts/sans/WOFF/SemanaSans-Medium.woff') format('woff'),
-      url('../fonts/sans/TTF/SemanaSans-Medium.ttf') format('truetype'),
-      url('../fonts/sans/OTF/SemanaSans-Medium.otf') format('opentype'),
-      url('../fonts/sans/EOT/SemanaSans-Medium.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-Light';
-    font-display: swap;
-    src: local('SemanaSans-Light'),
-      url('../fonts/sans/WOFF2/SemanaSans-Light.woff2') format('woff2'),
-      url('../fonts/sans/WOFF/SemanaSans-Light.woff') format('woff'),
-      url('../fonts/sans/TTF/SemanaSans-Light.ttf') format('truetype'),
-      url('../fonts/sans/OTF/SemanaSans-Light.otf') format('opentype'),
-      url('../fonts/sans/EOT/SemanaSans-Light.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-ExtraLight';
-    font-display: swap;
-    src: local('SemanaSans-ExtraLight'),
-      url('../fonts/sans/WOFF2/SemanaSans-ExtraLight.woff2')
-        format('woff2'),
-      url('../fonts/sans/WOFF/SemanaSans-ExtraLight.woff') format('woff'),
-      url('../fonts/sans/TTF/SemanaSans-ExtraLight.ttf')
-        format('truetype'),
-      url('../fonts/sans/OTF/SemanaSans-ExtraLight.otf')
-        format('opentype'),
-      url('../fonts/sans/EOT/SemanaSans-ExtraLight.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-ExtraBold';
-    font-display: swap;
-    src: local('SemanaSans-ExtraBold'),
-      url('../fonts/sans/WOFF2/SemanaSans-ExtraBold.woff2')
-        format('woff2'),
-      url('../fonts/sans/WOFF/SemanaSans-ExtraBold.woff') format('woff'),
-      url('../fonts/sans/TTF/SemanaSans-ExtraBold.ttf') format('truetype'),
-      url('../fonts/sans/OTF/SemanaSans-ExtraBold.otf') format('opentype'),
-      url('../fonts/sans/EOT/SemanaSans-ExtraBold.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-Bold';
-    font-display: swap;
-    src: local('SemanaSans-Bold'),
-      url('../fonts/sans/WOFF2/SemanaSans-Bold.woff2') format('woff2'),
-      url('../fonts/sans/WOFF/SemanaSans-Bold.woff') format('woff'),
-      url('../fonts/sans/TTF/SemanaSans-Bold.ttf') format('truetype'),
-      url('../fonts/sans/OTF/SemanaSans-Bold.otf') format('opentype'),
-      url('../fonts/sans/EOT/SemanaSans-Bold.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-Black';
-    font-display: swap;
-    src: local('SemanaSans-Black'),
-      url('../fonts/sans/WOFF2/SemanaSans-Black.woff2') format('woff2'),
-      url('../fonts/sans/WOFF/SemanaSans-Black.woff') format('woff'),
-      url('../fonts/sans/TTF/SemanaSans-Black.ttf') format('truetype'),
-      url('../fonts/sans/OTF/SemanaSans-Black.otf') format('opentype'),
-      url('../fonts/sans/EOT/SemanaSans-Black.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-RegularItalic';
-    font-display: swap;
-    src: local('SemanaSans-RegularItalic'),
-      url('../fonts/sans-italic/WOFF2/SemanaSans-MediumItalic.woff2')
-        format('woff2'),
-      url('../fonts/sans-italic/WOFF/SemanaSans-MediumItalic.woff')
-        format('woff'),
-      url('../fonts/sans-italic/TTF/SemanaSans-MediumItalic.ttf')
-        format('truetype'),
-      url('../fonts/sans-italic/OTF/SemanaSans-MediumItalic.otf')
-        format('opentype'),
-      url('../fonts/sans-italic/EOT/SemanaSans-MediumItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-ThinItalic';
-    font-display: swap;
-    src: local('SemanaSans-ThinItalic'),
-      url('../fonts/sans-italic/WOFF2/SemanaSans-ThinItalic.woff2')
-        format('woff2'),
-      url('../fonts/sans-italic/WOFF/SemanaSans-ThinItalic.woff')
-        format('woff'),
-      url('../fonts/sans-italic/TTF/SemanaSans-ThinItalic.ttf')
-        format('truetype'),
-      url('../fonts/sans-italic/OTF/SemanaSans-ThinItalic.otf')
-        format('opentype'),
-      url('../fonts/sans-italic/EOT/SemanaSans-ThinItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-LightItalic';
-    font-display: swap;
-    src: local('SemanaSans-LightItalic'),
-      url('../fonts/sans-italic/WOFF2/SemanaSans-LightItalic.woff2')
-        format('woff2'),
-      url('../fonts/sans-italic/WOFF/SemanaSans-LightItalic.woff')
-        format('woff'),
-      url('../fonts/sans-italic/TTF/SemanaSans-LightItalic.ttf')
-        format('truetype'),
-      url('../fonts/sans-italic/OTF/SemanaSans-LightItalic.otf')
-        format('opentype'),
-      url('../fonts/sans-italic/EOT/SemanaSans-LightItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-Italic';
-    font-display: swap;
-    src: local('SemanaSans-Italic'),
-      url('../fonts/sans-italic/WOFF2/SemanaSans-Italic.woff2')
-        format('woff2'),
-      url('../fonts/sans-italic/WOFF/SemanaSans-Italic.woff')
-        format('woff'),
-      url('../fonts/sans-italic/TTF/SemanaSans-Italic.ttf')
-        format('truetype'),
-      url('../fonts/sans-italic/OTF/SemanaSans-Italic.otf')
-        format('opentype'),
-      url('../fonts/sans-italic/EOT/SemanaSans-Italic.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-ExtraLightItalic';
-    font-display: swap;
-    src: local('SemanaSans-ExtraLightItalic'),
-      url('../fonts/sans-italic/WOFF2/SemanaSans-ExtraLightItalic.woff2')
-        format('woff2'),
-      url('../fonts/sans-italic/WOFF/SemanaSans-ExtraLightItalic.woff')
-        format('woff'),
-      url('../fonts/sans-italic/TTF/SemanaSans-ExtraLightItalic.ttf')
-        format('truetype'),
-      url('../fonts/sans-italic/OTF/SemanaSans-ExtraLightItalic.otf')
-        format('opentype'),
-      url('../fonts/sans-italic/EOT/SemanaSans-ExtraLightItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-ExtraBoldItalic';
-    font-display: swap;
-    src: local('SemanaSans-ExtraBoldItalic'),
-      url('../fonts/sans-italic/WOFF2/SemanaSans-ExtraBoldItalic.woff2')
-        format('woff2'),
-      url('../fonts/sans-italic/WOFF/SemanaSans-ExtraBoldItalic.woff')
-        format('woff'),
-      url('../fonts/sans-italic/TTF/SemanaSans-ExtraBoldItalic.ttf')
-        format('truetype'),
-      url('../fonts/sans-italic/OTF/SemanaSans-ExtraBoldItalic.otf')
-        format('opentype'),
-      url('../fonts/sans-italic/EOT/SemanaSans-ExtraBoldItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-BoldItalic';
-    font-display: swap;
-    src: local('SemanaSans-BoldItalic'),
-      url('../fonts/sans-italic/WOFF2/SemanaSans-BoldItalic.woff2')
-        format('woff2'),
-      url('../fonts/sans-italic/WOFF/SemanaSans-BoldItalic.woff')
-        format('woff'),
-      url('../fonts/sans-italic/TTF/SemanaSans-BoldItalic.ttf')
-        format('truetype'),
-      url('../fonts/sans-italic/OTF/SemanaSans-BoldItalic.otf')
-        format('opentype'),
-      url('../fonts/sans-italic/EOT/SemanaSans-BoldItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSans-BlackItalic';
-    font-display: swap;
-    src: local('SemanaSans-BlackItalic'),
-      url('../fonts/sans-italic/WOFF2/SemanaSans-BlackItalic.woff2')
-        format('woff2'),
-      url('../fonts/sans-italic/WOFF/SemanaSans-BlackItalic.woff')
-        format('woff'),
-      url('../fonts/sans-italic/TTF/SemanaSans-BlackItalic.ttf')
-        format('truetype'),
-      url('../fonts/sans-italic/OTF/SemanaSans-BlackItalic.otf')
-        format('opentype'),
-      url('../fonts/sans-italic/EOT/SemanaSans-BlackItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-Regular';
-    font-display: swap;
-    src: local('SemanaSerif-Regular'),
-      url('../fonts/serif/WOFF2/SemanaSerif-Regular.woff2')
-        format('woff2'),
-      url('../fonts/serif/WOFF/SemanaSerif-Regular.woff') format('woff'),
-      url('../fonts/serif/TTF/SemanaSerif-Regular.ttf') format('truetype'),
-      url('../fonts/serif/OTF/SemanaSerif-Regular.otf') format('opentype'),
-      url('../fonts/serif/EOT/SemanaSerif-Regular.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-Thin';
-    font-display: swap;
-    src: local('SemanaSerif-Thin'),
-      url('../fonts/serif/WOFF2/SemanaSerif-Thin.woff2') format('woff2'),
-      url('../fonts/serif/WOFF/SemanaSerif-Thin.woff') format('woff'),
-      url('../fonts/serif/TTF/SemanaSerif-Thin.ttf') format('truetype'),
-      url('../fonts/serif/OTF/SemanaSerif-Thin.otf') format('opentype'),
-      url('../fonts/serif/EOT/SemanaSerif-Thin.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-Medium';
-    font-display: swap;
-    src: local('SemanaSerif-Medium'),
-      url('../fonts/serif/WOFF2/SemanaSerif-Medium.woff2') format('woff2'),
-      url('../fonts/serif/WOFF/SemanaSerif-Medium.woff') format('woff'),
-      url('../fonts/serif/TTF/SemanaSerif-Medium.ttf') format('truetype'),
-      url('../fonts/serif/OTF/SemanaSerif-Medium.otf') format('opentype'),
-      url('../fonts/serif/EOT/SemanaSerif-Medium.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-Light';
-    font-display: swap;
-    src: local('SemanaSerif-Light'),
-      url('../fonts/serif/WOFF2/SemanaSerif-Light.woff2') format('woff2'),
-      url('../fonts/serif/WOFF/SemanaSerif-Light.woff') format('woff'),
-      url('../fonts/serif/TTF/SemanaSerif-Light.ttf') format('truetype'),
-      url('../fonts/serif/OTF/SemanaSerif-Light.otf') format('opentype'),
-      url('../fonts/serif/EOT/SemanaSerif-Light.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-ExtraLight';
-    font-display: swap;
-    src: local('SemanaSerif-ExtraLight'),
-      url('../fonts/serif/WOFF2/SemanaSerif-ExtraLight.woff2') format('woff2'),
-      url('../fonts/serif/WOFF/SemanaSerif-ExtraLight.woff') format('woff'),
-      url('../fonts/serif/TTF/SemanaSerif-ExtraLight.ttf') format('truetype'),
-      url('../fonts/serif/OTF/SemanaSerif-ExtraLight.otf') format('opentype'),
-      url('../fonts/serif/EOT/SemanaSerif-ExtraLight.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-ExtraBold';
-    font-display: swap;
-    src: local('SemanaSerif-ExtraBold'),
-      url('../fonts/serif/WOFF2/SemanaSerif-ExtraBold.woff2') format('woff2'),
-      url('../fonts/serif/WOFF/SemanaSerif-ExtraBold.woff') format('woff'),
-      url('../fonts/serif/TTF/SemanaSerif-ExtraBold.ttf') format('truetype'),
-      url('../fonts/serif/OTF/SemanaSerif-ExtraBold.otf') format('opentype'),
-      url('../fonts/serif/EOT/SemanaSerif-ExtraBold.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-Bold';
-    font-display: swap;
-    src: local('SemanaSerif-Bold'),
-      url('../fonts/serif/OTF/SemanaSerif-Bold.otf') format('opentype'),
-      url('../fonts/serif/WOFF2/SemanaSerif-Bold.woff2') format('woff2'),
-      url('../fonts/serif/WOFF/SemanaSerif-Bold.woff') format('woff'),
-      url('../fonts/serif/TTF/SemanaSerif-Bold.ttf') format('truetype'),
-      url('../fonts/serif/EOT/SemanaSerif-Bold.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-Black';
-    font-display: swap;
-    src: local('SemanaSerif-Black'),
-      url('../fonts/serif/OTF/SemanaSerif-Black.otf') format('opentype'),
-      url('../fonts/serif/WOFF2/SemanaSerif-Black.woff2') format('woff2'),
-      url('../fonts/serif/WOFF/SemanaSerif-Black.woff') format('woff'),
-      url('../fonts/serif/TTF/SemanaSerif-Black.ttf') format('truetype'),
-      url('../fonts/serif/EOT/SemanaSerif-Black.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-RegularItalic';
-    font-display: swap;
-    src: local('SemanaSerif-RegularItalic'),
-      url('../fonts/serif-italic/WOFF2/SemanaSerif-RegularItalic.woff2') format('woff2'),
-      url('../fonts/serif-italic/WOFF/SemanaSerif-RegularItalic.woff') format('woff'),
-      url('../fonts/serif-italic/TTF/SemanaSerif-RegularItalic.ttf') format('truetype'),
-      url('../fonts/serif-italic/OTF/SemanaSerif-RegularItalic.otf') format('opentype'),
-      url('../fonts/serif-italic/EOT/SemanaSerif-RegularItalic.eot') format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-ThinItalic';
-    font-display: swap;
-    src: local('SemanaSerif-ThinItalic'),
-      url('../fonts/serif-italic/WOFF2/SemanaSerif-ThinItalic.woff2')
-        format('woff2'),
-      url('../fonts/serif-italic/WOFF/SemanaSerif-ThinItalic.woff')
-        format('woff'),
-      url('../fonts/serif-italic/TTF/SemanaSerif-ThinItalic.ttf')
-        format('truetype'),
-      url('../fonts/serif-italic/OTF/SemanaSerif-ThinItalic.otf')
-        format('opentype'),
-      url('../fonts/serif-italic/EOT/SemanaSerif-ThinItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-MediumItalic';
-    font-display: swap;
-    src: local('SemanaSerif-MediumItalic'),
-      url('../fonts/serif-italic/WOFF2/SemanaSerif-MediumItalic.woff2')
-        format('woff2'),
-      url('../fonts/serif-italic/WOFF/SemanaSerif-MediumItalic.woff')
-        format('woff'),
-      url('../fonts/serif-italic/TTF/SemanaSerif-MediumItalic.ttf')
-        format('truetype'),
-      url('../fonts/serif-italic/OTF/SemanaSerif-MediumItalic.otf')
-        format('opentype'),
-      url('../fonts/serif-italic/EOT/SemanaSerif-MediumItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-LightItalic';
-    font-display: swap;
-    src: local('SemanaSerif-LightItalic'),
-      url('../fonts/serif-italic/WOFF2/SemanaSerif-LightItalic.woff2')
-        format('woff2'),
-      url('../fonts/serif-italic/WOFF/SemanaSerif-LightItalic.woff')
-        format('woff'),
-      url('../fonts/serif-italic/TTF/SemanaSerif-LightItalic.ttf')
-        format('truetype'),
-      url('../fonts/serif-italic/OTF/SemanaSerif-LightItalic.otf')
-        format('opentype'),
-      url('../fonts/serif-italic/EOT/SemanaSerif-LightItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-ExtraLightItalic';
-    font-display: swap;
-    src: local('SemanaSerif-ExtraLightItalic'),
-      url('../fonts/serif-italic/WOFF2/SemanaSerif-ExtraLightItalic.woff2')
-        format('woff2'),
-      url('../fonts/serif-italic/WOFF/SemanaSerif-ExtraLightItalic.woff')
-        format('woff'),
-      url('../fonts/serif-italic/TTF/SemanaSerif-ExtraLightItalic.ttf')
-        format('truetype'),
-      url('../fonts/serif-italic/OTF/SemanaSerif-ExtraLightItalic.otf')
-        format('opentype'),
-      url('../fonts/serif-italic/EOT/SemanaSerif-ExtraLightItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-ExtraBoldItalic';
-    font-display: swap;
-    src: local('SemanaSerif-ExtraBoldItalic'),
-      url('../fonts/serif-italic/WOFF2/SemanaSerif-ExtraBoldItalic.woff2')
-        format('woff2'),
-      url('../fonts/serif-italic/WOFF/SemanaSerif-ExtraBoldItalic.woff')
-        format('woff'),
-      url('../fonts/serif-italic/TTF/SemanaSerif-ExtraBoldItalic.ttf')
-        format('truetype'),
-      url('../fonts/serif-italic/OTF/SemanaSerif-ExtraBoldItalic.otf')
-        format('opentype'),
-      url('../fonts/serif-italic/EOT/SemanaSerif-ExtraBoldItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-BoldItalic';
-    font-display: swap;
-    src: local('SemanaSerif-BoldItalic'),
-      url('../fonts/serif-italic/WOFF2/SemanaSerif-BoldItalic.woff2')
-        format('woff2'),
-      url('../fonts/serif-italic/WOFF/SemanaSerif-BoldItalic.woff')
-        format('woff'),
-      url('../fonts/serif-italic/TTF/SemanaSerif-BoldItalic.ttf')
-        format('truetype'),
-      url('../fonts/serif-italic/OTF/SemanaSerif-BoldItalic.otf')
-        format('opentype'),
-      url('../fonts/serif-italic/EOT/SemanaSerif-BoldItalic.eot')
-        format('eot');
-  }
-  
-  @font-face {
-    font-family: 'SemanaSerif-BlackItalic';
-    font-display: swap;
-    src: local('SemanaSerif-BlackItalic'),
-      url('../fonts/serif-italic/WOFF2/SemanaSerif-BlackItalic.woff2')
-        format('woff2'),
-      url('../fonts/serif-italic/WOFF/SemanaSerif-BlackItalic.woff')
-        format('woff'),
-      url('../fonts/serif-italic/TTF/SemanaSerif-BlackItalic.ttf')
-        format('truetype'),
-      url('../fonts/serif-italic/OTF/SemanaSerif-BlackItalic.otf')
-        format('opentype'),
-      url('../fonts/serif-italic/EOT/SemanaSerif-BlackItalic.eot')
-        format('eot');
-  }
-  
-  /* root */
-  :root {
-    --color-grey-light: #FCFCFC;
-    --color-grey-dark: #1F1F1F;
-    --color-red: #E91B1E;
-  }
-  
-  /* layout breakpoints */
-  
-  /* lg */
-  @media only screen and (min-width: 960px) {}
-  
-  /* md */
-  @media only screen and (min-width: 640px) {}
-  
-  /* sm */
-  @media only screen and (min-width: 480px) {}
-  
-  /* font & space breakpoints */
-  @media only screen and (max-width: 480px) {}
-  @media only screen and (max-width: 768px) {}
-  @media only screen and (max-width: 960px) {}
-  @media only screen and (max-width: 1280px) {}
-  
-  body {
-    position: relative;
-    padding: 0px;
-    margin: 0px;
-    font-family: Serif, 'SemanaSerif-Regular';
-    font-weight: normal;
-  }
-  
+  font-family: 'SemanaSans-Regular';
+  font-display: swap;
+  src: local('SemanaSans-Regular'),
+    url('../fonts/sans/WOFF2/SemanaSans-Regular.woff2') format('woff2'),
+    url('../fonts/sans/WOFF/SemanaSans-Regular.woff') format('woff'),
+    url('../fonts/sans/TTF/SemanaSans-Regular.ttf') format('truetype'),
+    url('../fonts/sans/OTF/SemanaSans-Regular.otf') format('opentype'),
+    url('../fonts/sans/EOT/SemanaSans-Regular.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-Thin';
+  font-display: swap;
+  src: local('SemanaSans-Thin'),
+    url('../fonts/sans/WOFF2/SemanaSans-Thin.woff2') format('woff2'),
+    url('../fonts/sans/WOFF/SemanaSans-Thin.woff') format('woff'),
+    url('../fonts/sans/TTF/SemanaSans-Thin.ttf') format('truetype'),
+    url('../fonts/sans/OTF/SemanaSans-Thin.otf') format('opentype'),
+    url('../fonts/sans/EOT/SemanaSans-Thin.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-Medium';
+  font-display: swap;
+  src: local('SemanaSans-Medium'),
+    url('../fonts/sans/WOFF2/SemanaSans-Medium.woff2') format('woff2'),
+    url('../fonts/sans/WOFF/SemanaSans-Medium.woff') format('woff'),
+    url('../fonts/sans/TTF/SemanaSans-Medium.ttf') format('truetype'),
+    url('../fonts/sans/OTF/SemanaSans-Medium.otf') format('opentype'),
+    url('../fonts/sans/EOT/SemanaSans-Medium.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-Light';
+  font-display: swap;
+  src: local('SemanaSans-Light'),
+    url('../fonts/sans/WOFF2/SemanaSans-Light.woff2') format('woff2'),
+    url('../fonts/sans/WOFF/SemanaSans-Light.woff') format('woff'),
+    url('../fonts/sans/TTF/SemanaSans-Light.ttf') format('truetype'),
+    url('../fonts/sans/OTF/SemanaSans-Light.otf') format('opentype'),
+    url('../fonts/sans/EOT/SemanaSans-Light.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-ExtraLight';
+  font-display: swap;
+  src: local('SemanaSans-ExtraLight'),
+    url('../fonts/sans/WOFF2/SemanaSans-ExtraLight.woff2')
+      format('woff2'),
+    url('../fonts/sans/WOFF/SemanaSans-ExtraLight.woff') format('woff'),
+    url('../fonts/sans/TTF/SemanaSans-ExtraLight.ttf')
+      format('truetype'),
+    url('../fonts/sans/OTF/SemanaSans-ExtraLight.otf')
+      format('opentype'),
+    url('../fonts/sans/EOT/SemanaSans-ExtraLight.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-ExtraBold';
+  font-display: swap;
+  src: local('SemanaSans-ExtraBold'),
+    url('../fonts/sans/WOFF2/SemanaSans-ExtraBold.woff2')
+      format('woff2'),
+    url('../fonts/sans/WOFF/SemanaSans-ExtraBold.woff') format('woff'),
+    url('../fonts/sans/TTF/SemanaSans-ExtraBold.ttf') format('truetype'),
+    url('../fonts/sans/OTF/SemanaSans-ExtraBold.otf') format('opentype'),
+    url('../fonts/sans/EOT/SemanaSans-ExtraBold.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-Bold';
+  font-display: swap;
+  src: local('SemanaSans-Bold'),
+    url('../fonts/sans/WOFF2/SemanaSans-Bold.woff2') format('woff2'),
+    url('../fonts/sans/WOFF/SemanaSans-Bold.woff') format('woff'),
+    url('../fonts/sans/TTF/SemanaSans-Bold.ttf') format('truetype'),
+    url('../fonts/sans/OTF/SemanaSans-Bold.otf') format('opentype'),
+    url('../fonts/sans/EOT/SemanaSans-Bold.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-Black';
+  font-display: swap;
+  src: local('SemanaSans-Black'),
+    url('../fonts/sans/WOFF2/SemanaSans-Black.woff2') format('woff2'),
+    url('../fonts/sans/WOFF/SemanaSans-Black.woff') format('woff'),
+    url('../fonts/sans/TTF/SemanaSans-Black.ttf') format('truetype'),
+    url('../fonts/sans/OTF/SemanaSans-Black.otf') format('opentype'),
+    url('../fonts/sans/EOT/SemanaSans-Black.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-RegularItalic';
+  font-display: swap;
+  src: local('SemanaSans-RegularItalic'),
+    url('../fonts/sans-italic/WOFF2/SemanaSans-MediumItalic.woff2')
+      format('woff2'),
+    url('../fonts/sans-italic/WOFF/SemanaSans-MediumItalic.woff')
+      format('woff'),
+    url('../fonts/sans-italic/TTF/SemanaSans-MediumItalic.ttf')
+      format('truetype'),
+    url('../fonts/sans-italic/OTF/SemanaSans-MediumItalic.otf')
+      format('opentype'),
+    url('../fonts/sans-italic/EOT/SemanaSans-MediumItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-ThinItalic';
+  font-display: swap;
+  src: local('SemanaSans-ThinItalic'),
+    url('../fonts/sans-italic/WOFF2/SemanaSans-ThinItalic.woff2')
+      format('woff2'),
+    url('../fonts/sans-italic/WOFF/SemanaSans-ThinItalic.woff')
+      format('woff'),
+    url('../fonts/sans-italic/TTF/SemanaSans-ThinItalic.ttf')
+      format('truetype'),
+    url('../fonts/sans-italic/OTF/SemanaSans-ThinItalic.otf')
+      format('opentype'),
+    url('../fonts/sans-italic/EOT/SemanaSans-ThinItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-LightItalic';
+  font-display: swap;
+  src: local('SemanaSans-LightItalic'),
+    url('../fonts/sans-italic/WOFF2/SemanaSans-LightItalic.woff2')
+      format('woff2'),
+    url('../fonts/sans-italic/WOFF/SemanaSans-LightItalic.woff')
+      format('woff'),
+    url('../fonts/sans-italic/TTF/SemanaSans-LightItalic.ttf')
+      format('truetype'),
+    url('../fonts/sans-italic/OTF/SemanaSans-LightItalic.otf')
+      format('opentype'),
+    url('../fonts/sans-italic/EOT/SemanaSans-LightItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-Italic';
+  font-display: swap;
+  src: local('SemanaSans-Italic'),
+    url('../fonts/sans-italic/WOFF2/SemanaSans-Italic.woff2')
+      format('woff2'),
+    url('../fonts/sans-italic/WOFF/SemanaSans-Italic.woff')
+      format('woff'),
+    url('../fonts/sans-italic/TTF/SemanaSans-Italic.ttf')
+      format('truetype'),
+    url('../fonts/sans-italic/OTF/SemanaSans-Italic.otf')
+      format('opentype'),
+    url('../fonts/sans-italic/EOT/SemanaSans-Italic.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-ExtraLightItalic';
+  font-display: swap;
+  src: local('SemanaSans-ExtraLightItalic'),
+    url('../fonts/sans-italic/WOFF2/SemanaSans-ExtraLightItalic.woff2')
+      format('woff2'),
+    url('../fonts/sans-italic/WOFF/SemanaSans-ExtraLightItalic.woff')
+      format('woff'),
+    url('../fonts/sans-italic/TTF/SemanaSans-ExtraLightItalic.ttf')
+      format('truetype'),
+    url('../fonts/sans-italic/OTF/SemanaSans-ExtraLightItalic.otf')
+      format('opentype'),
+    url('../fonts/sans-italic/EOT/SemanaSans-ExtraLightItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-ExtraBoldItalic';
+  font-display: swap;
+  src: local('SemanaSans-ExtraBoldItalic'),
+    url('../fonts/sans-italic/WOFF2/SemanaSans-ExtraBoldItalic.woff2')
+      format('woff2'),
+    url('../fonts/sans-italic/WOFF/SemanaSans-ExtraBoldItalic.woff')
+      format('woff'),
+    url('../fonts/sans-italic/TTF/SemanaSans-ExtraBoldItalic.ttf')
+      format('truetype'),
+    url('../fonts/sans-italic/OTF/SemanaSans-ExtraBoldItalic.otf')
+      format('opentype'),
+    url('../fonts/sans-italic/EOT/SemanaSans-ExtraBoldItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-BoldItalic';
+  font-display: swap;
+  src: local('SemanaSans-BoldItalic'),
+    url('../fonts/sans-italic/WOFF2/SemanaSans-BoldItalic.woff2')
+      format('woff2'),
+    url('../fonts/sans-italic/WOFF/SemanaSans-BoldItalic.woff')
+      format('woff'),
+    url('../fonts/sans-italic/TTF/SemanaSans-BoldItalic.ttf')
+      format('truetype'),
+    url('../fonts/sans-italic/OTF/SemanaSans-BoldItalic.otf')
+      format('opentype'),
+    url('../fonts/sans-italic/EOT/SemanaSans-BoldItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSans-BlackItalic';
+  font-display: swap;
+  src: local('SemanaSans-BlackItalic'),
+    url('../fonts/sans-italic/WOFF2/SemanaSans-BlackItalic.woff2')
+      format('woff2'),
+    url('../fonts/sans-italic/WOFF/SemanaSans-BlackItalic.woff')
+      format('woff'),
+    url('../fonts/sans-italic/TTF/SemanaSans-BlackItalic.ttf')
+      format('truetype'),
+    url('../fonts/sans-italic/OTF/SemanaSans-BlackItalic.otf')
+      format('opentype'),
+    url('../fonts/sans-italic/EOT/SemanaSans-BlackItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-Regular';
+  font-display: swap;
+  src: local('SemanaSerif-Regular'),
+    url('../fonts/serif/WOFF2/SemanaSerif-Regular.woff2')
+      format('woff2'),
+    url('../fonts/serif/WOFF/SemanaSerif-Regular.woff') format('woff'),
+    url('../fonts/serif/TTF/SemanaSerif-Regular.ttf') format('truetype'),
+    url('../fonts/serif/OTF/SemanaSerif-Regular.otf') format('opentype'),
+    url('../fonts/serif/EOT/SemanaSerif-Regular.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-Thin';
+  font-display: swap;
+  src: local('SemanaSerif-Thin'),
+    url('../fonts/serif/WOFF2/SemanaSerif-Thin.woff2') format('woff2'),
+    url('../fonts/serif/WOFF/SemanaSerif-Thin.woff') format('woff'),
+    url('../fonts/serif/TTF/SemanaSerif-Thin.ttf') format('truetype'),
+    url('../fonts/serif/OTF/SemanaSerif-Thin.otf') format('opentype'),
+    url('../fonts/serif/EOT/SemanaSerif-Thin.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-Medium';
+  font-display: swap;
+  src: local('SemanaSerif-Medium'),
+    url('../fonts/serif/WOFF2/SemanaSerif-Medium.woff2') format('woff2'),
+    url('../fonts/serif/WOFF/SemanaSerif-Medium.woff') format('woff'),
+    url('../fonts/serif/TTF/SemanaSerif-Medium.ttf') format('truetype'),
+    url('../fonts/serif/OTF/SemanaSerif-Medium.otf') format('opentype'),
+    url('../fonts/serif/EOT/SemanaSerif-Medium.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-Light';
+  font-display: swap;
+  src: local('SemanaSerif-Light'),
+    url('../fonts/serif/WOFF2/SemanaSerif-Light.woff2') format('woff2'),
+    url('../fonts/serif/WOFF/SemanaSerif-Light.woff') format('woff'),
+    url('../fonts/serif/TTF/SemanaSerif-Light.ttf') format('truetype'),
+    url('../fonts/serif/OTF/SemanaSerif-Light.otf') format('opentype'),
+    url('../fonts/serif/EOT/SemanaSerif-Light.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-ExtraLight';
+  font-display: swap;
+  src: local('SemanaSerif-ExtraLight'),
+    url('../fonts/serif/WOFF2/SemanaSerif-ExtraLight.woff2') format('woff2'),
+    url('../fonts/serif/WOFF/SemanaSerif-ExtraLight.woff') format('woff'),
+    url('../fonts/serif/TTF/SemanaSerif-ExtraLight.ttf') format('truetype'),
+    url('../fonts/serif/OTF/SemanaSerif-ExtraLight.otf') format('opentype'),
+    url('../fonts/serif/EOT/SemanaSerif-ExtraLight.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-ExtraBold';
+  font-display: swap;
+  src: local('SemanaSerif-ExtraBold'),
+    url('../fonts/serif/WOFF2/SemanaSerif-ExtraBold.woff2') format('woff2'),
+    url('../fonts/serif/WOFF/SemanaSerif-ExtraBold.woff') format('woff'),
+    url('../fonts/serif/TTF/SemanaSerif-ExtraBold.ttf') format('truetype'),
+    url('../fonts/serif/OTF/SemanaSerif-ExtraBold.otf') format('opentype'),
+    url('../fonts/serif/EOT/SemanaSerif-ExtraBold.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-Bold';
+  font-display: swap;
+  src: local('SemanaSerif-Bold'),
+    url('../fonts/serif/OTF/SemanaSerif-Bold.otf') format('opentype'),
+    url('../fonts/serif/WOFF2/SemanaSerif-Bold.woff2') format('woff2'),
+    url('../fonts/serif/WOFF/SemanaSerif-Bold.woff') format('woff'),
+    url('../fonts/serif/TTF/SemanaSerif-Bold.ttf') format('truetype'),
+    url('../fonts/serif/EOT/SemanaSerif-Bold.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-Black';
+  font-display: swap;
+  src: local('SemanaSerif-Black'),
+    url('../fonts/serif/OTF/SemanaSerif-Black.otf') format('opentype'),
+    url('../fonts/serif/WOFF2/SemanaSerif-Black.woff2') format('woff2'),
+    url('../fonts/serif/WOFF/SemanaSerif-Black.woff') format('woff'),
+    url('../fonts/serif/TTF/SemanaSerif-Black.ttf') format('truetype'),
+    url('../fonts/serif/EOT/SemanaSerif-Black.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-RegularItalic';
+  font-display: swap;
+  src: local('SemanaSerif-RegularItalic'),
+    url('../fonts/serif-italic/WOFF2/SemanaSerif-RegularItalic.woff2') format('woff2'),
+    url('../fonts/serif-italic/WOFF/SemanaSerif-RegularItalic.woff') format('woff'),
+    url('../fonts/serif-italic/TTF/SemanaSerif-RegularItalic.ttf') format('truetype'),
+    url('../fonts/serif-italic/OTF/SemanaSerif-RegularItalic.otf') format('opentype'),
+    url('../fonts/serif-italic/EOT/SemanaSerif-RegularItalic.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-ThinItalic';
+  font-display: swap;
+  src: local('SemanaSerif-ThinItalic'),
+    url('../fonts/serif-italic/WOFF2/SemanaSerif-ThinItalic.woff2')
+      format('woff2'),
+    url('../fonts/serif-italic/WOFF/SemanaSerif-ThinItalic.woff')
+      format('woff'),
+    url('../fonts/serif-italic/TTF/SemanaSerif-ThinItalic.ttf')
+      format('truetype'),
+    url('../fonts/serif-italic/OTF/SemanaSerif-ThinItalic.otf')
+      format('opentype'),
+    url('../fonts/serif-italic/EOT/SemanaSerif-ThinItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-MediumItalic';
+  font-display: swap;
+  src: local('SemanaSerif-MediumItalic'),
+    url('../fonts/serif-italic/WOFF2/SemanaSerif-MediumItalic.woff2')
+      format('woff2'),
+    url('../fonts/serif-italic/WOFF/SemanaSerif-MediumItalic.woff')
+      format('woff'),
+    url('../fonts/serif-italic/TTF/SemanaSerif-MediumItalic.ttf')
+      format('truetype'),
+    url('../fonts/serif-italic/OTF/SemanaSerif-MediumItalic.otf')
+      format('opentype'),
+    url('../fonts/serif-italic/EOT/SemanaSerif-MediumItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-LightItalic';
+  font-display: swap;
+  src: local('SemanaSerif-LightItalic'),
+    url('../fonts/serif-italic/WOFF2/SemanaSerif-LightItalic.woff2')
+      format('woff2'),
+    url('../fonts/serif-italic/WOFF/SemanaSerif-LightItalic.woff')
+      format('woff'),
+    url('../fonts/serif-italic/TTF/SemanaSerif-LightItalic.ttf')
+      format('truetype'),
+    url('../fonts/serif-italic/OTF/SemanaSerif-LightItalic.otf')
+      format('opentype'),
+    url('../fonts/serif-italic/EOT/SemanaSerif-LightItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-ExtraLightItalic';
+  font-display: swap;
+  src: local('SemanaSerif-ExtraLightItalic'),
+    url('../fonts/serif-italic/WOFF2/SemanaSerif-ExtraLightItalic.woff2')
+      format('woff2'),
+    url('../fonts/serif-italic/WOFF/SemanaSerif-ExtraLightItalic.woff')
+      format('woff'),
+    url('../fonts/serif-italic/TTF/SemanaSerif-ExtraLightItalic.ttf')
+      format('truetype'),
+    url('../fonts/serif-italic/OTF/SemanaSerif-ExtraLightItalic.otf')
+      format('opentype'),
+    url('../fonts/serif-italic/EOT/SemanaSerif-ExtraLightItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-ExtraBoldItalic';
+  font-display: swap;
+  src: local('SemanaSerif-ExtraBoldItalic'),
+    url('../fonts/serif-italic/WOFF2/SemanaSerif-ExtraBoldItalic.woff2')
+      format('woff2'),
+    url('../fonts/serif-italic/WOFF/SemanaSerif-ExtraBoldItalic.woff')
+      format('woff'),
+    url('../fonts/serif-italic/TTF/SemanaSerif-ExtraBoldItalic.ttf')
+      format('truetype'),
+    url('../fonts/serif-italic/OTF/SemanaSerif-ExtraBoldItalic.otf')
+      format('opentype'),
+    url('../fonts/serif-italic/EOT/SemanaSerif-ExtraBoldItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-BoldItalic';
+  font-display: swap;
+  src: local('SemanaSerif-BoldItalic'),
+    url('../fonts/serif-italic/WOFF2/SemanaSerif-BoldItalic.woff2')
+      format('woff2'),
+    url('../fonts/serif-italic/WOFF/SemanaSerif-BoldItalic.woff')
+      format('woff'),
+    url('../fonts/serif-italic/TTF/SemanaSerif-BoldItalic.ttf')
+      format('truetype'),
+    url('../fonts/serif-italic/OTF/SemanaSerif-BoldItalic.otf')
+      format('opentype'),
+    url('../fonts/serif-italic/EOT/SemanaSerif-BoldItalic.eot')
+      format('eot');
+}
+
+@font-face {
+  font-family: 'SemanaSerif-BlackItalic';
+  font-display: swap;
+  src: local('SemanaSerif-BlackItalic'),
+    url('../fonts/serif-italic/WOFF2/SemanaSerif-BlackItalic.woff2')
+      format('woff2'),
+    url('../fonts/serif-italic/WOFF/SemanaSerif-BlackItalic.woff')
+      format('woff'),
+    url('../fonts/serif-italic/TTF/SemanaSerif-BlackItalic.ttf')
+      format('truetype'),
+    url('../fonts/serif-italic/OTF/SemanaSerif-BlackItalic.otf')
+      format('opentype'),
+    url('../fonts/serif-italic/EOT/SemanaSerif-BlackItalic.eot')
+      format('eot');
+}
+
+/* root */
+:root {
+  --color-grey-light: #FCFCFC;
+  --color-grey-dark: #1F1F1F;
+
+  --color-blue: #FEDC04;
+  --color-yellow: #1C56E8;
+  --color-red: #E91B1E;
+
+  /* bgs */
+  --bg-color-primary: white;
+  --bg-color-secondary: black;
+
   /* fonts */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 0;
-    margin-bottom: 8px;
-    line-height: 1.2667;
-    font-weight: initial;
-  }
+  --color-font-100: white;
+
+  --color-font-150: #F2F2F2;
+  --color-font-200: #DDD;
+  --color-font-250: #C4C4C4;
+
+  --color-font-300 : #AAA;
+  --color-font-350 : #A7A7A7;
+
+  --color-font-400: #9D9D9D;
+  --color-font-500: #707070;
+
+  --color-font-900: black;
+}
+
+/* layout breakpoints */
+
+/* lg */
+@media only screen and (min-width: 960px) {}
+
+/* md */
+@media only screen and (min-width: 640px) {}
+
+/* sm */
+@media only screen and (min-width: 480px) {}
+
+/* font & space breakpoints */
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 1280px) {}
+
+body {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  font-family: Serif, 'SemanaSerif-Regular';
+  font-weight: normal;
+}
+
+/* themes */
+.theme-dark {
   
-  h1,
-  h2 {
-    margin-bottom: 16px;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 24px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  h4 {
-    font-size: 18px;
-  }
-  h5 {
-    font-size: 16px;
-    line-height: 1.1875;
-  }
-  h6 {
-    font-size: 14px;
-  }
-  /*
-  p {
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 15px;
-    line-height: 1.4;
-  }
-  small {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 12px;
-    line-height: 1.2;
-  }
-  */
-  
-  .container-fluid {
-    position: relative;
-  }
-  
-  /* container */
-  .container {
-    position: relative;
-    max-width: 1920px;
-    margin: 0 auto;
-  }
-  
+
+  background-color: black;
+}
+
+/* fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  line-height: 1.2667;
+  font-weight: initial;
+}
+
+h1,
+h2 {
+  margin-bottom: 16px;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+  line-height: 1.1875;
+}
+h6 {
+  font-size: 14px;
+}
+/*
+p {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+small {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 1.2;
+}
+*/
+
+.container-fluid {
+  position: relative;
+}
+
+/* container */
+.container {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  max-width: 1280px;
+  padding: 0 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 960px) {
   .section {
-    position: relative;
-    max-width: 1280px;
-    padding: 0 10px;
-    margin: 0 auto;
-    box-sizing: border-box;
+      max-width: 720px;
   }
-  
-  @media only screen and (max-width: 960px) {
-    .section {
-        max-width: 720px;
-    }
+}
+@media only screen and (max-width: 640px) {
+  .section {
+      max-width: 440px;
   }
-  @media only screen and (max-width: 640px) {
-    .section {
-        max-width: 440px;
-    }
-  }
-  .footer{
-    background: #1F1F1F;
-  }
-  
-  /* helpers */
-  hr {
-    position: relative;
-    display: block;
-    margin-top: 0;
-    border: 0;
-    height: 0;
-    width: 100%;
-    margin-bottom: 16px;
-  }
-  
-  hr,
-  hr.tiny ,
-  hr[tiny],
-  hr[data-tiny] {
-    height: 1px;
-    background-color: #DDD;
-  }
-  
-  hr[stroke],
-  hr[data-stroke],
-  hr.stroke {
-    height: 2px;
-    background-color: #C4C4C4;
-  }
-  
-  hr[compact],
-  hr[data-compact],
-  hr.compact {
-    margin-bottom: 10px;
-  }
-  
-  .img-fluid {
-    display: block;
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 0;
-  }
-  
-  .img-responsive {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 0;
-  }
-  
-  .cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    background: linear-gradient(to top, black, transparent 60% );
-    pointer-events: none;
-    user-select: none;
-  }
-  
-  .cover-70 { background: linear-gradient(to top, black, transparent 70% ); }
-  .cover-80 { background: linear-gradient(to top, black, transparent 80% ); }
-  
-  .shadow { box-shadow: 0 1px 2px rgba(0, 0, 0, .15); }
-  
-  .outline * { outline: 1px solid purple; }
-  
-  .bg-red {
-    background-color: var(--color-grey-light);
-  }
-  .bg-light {
-    background-color: var(--color-grey-light);
-  }
-  .bg-dark {
-    background-color: var(--color-grey-dark);
-  }
-  
+}
+
+.section.sp-8 {
+  max-width: 640px;
+}
+.section.sp-10 {
+  max-width: 800px;
+}
+.section.sp-12 {
+  max-width: 960px;
+}
+.section.sp-14 {
+  max-width: 1120px;
+}
+
+.footer{
+  background: #1F1F1F;
+}
+
+/* helpers */
+hr {
+  position: relative;
+  display: block;
+  margin-top: 0;
+  border: 0;
+  height: 0;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+hr,
+hr.tiny ,
+hr[tiny],
+hr[data-tiny] {
+  height: 1px;
+  background-color: #DDD;
+}
+
+hr[stroke],
+hr[data-stroke],
+hr.stroke {
+  height: 2px;
+  background-color: #C4C4C4;
+}
+
+hr[compact],
+hr[data-compact],
+hr.compact {
+  margin-bottom: 10px;
+}
+
+.img-fluid {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.img-responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.img-cover a {
+  display: block;
+  height: 100%;
+  flex-grow: 1;
+}
+.img-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 0;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: linear-gradient(to top, black, transparent 60% );
+  pointer-events: none;
+  user-select: none;
+}
+
+.cover-70 { background: linear-gradient(to top, black, transparent 70% ); }
+.cover-80 { background: linear-gradient(to top, black, transparent 80% ); }
+
+.shadow { box-shadow: 0 1px 2px rgba(0, 0, 0, .15); }
+
+.outline * { outline: 1px solid purple; }
+
+.bg-red {
+  background-color: #E91B1E;
+  background-color: var(--color-grey-red);
+}
+.bg-light {
+  background-color: #FCFCFC;
+  background-color: var(--color-grey-light);
+}
+.bg-dark {
+  background-color: #1F1F1F;
+  background-color: var(--color-grey-dark);
+}
+
+.br-left::after {
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  bottom: 10px;
+  width: 1px;
+  background-color: #DDD;
+}
+@media only screen and (max-width: 960px) {
   .br-left::after {
-    display: block;
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: -10px;
-    bottom: 10px;
-    width: 1px;
-    background-color: #DDD;
+    display: none;
   }
-  @media only screen and (max-width: 960px) {
-    .br-left::after {
-      display: none;
-    }
-  }
+}
+.br-right::after {
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  bottom: 10px;
+  width: 1px;
+  background-color: #DDD;
+}
+@media only screen and (max-width: 960px) {
   .br-right::after {
-    display: block;
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: -10px;
-    bottom: 10px;
-    width: 1px;
-    background-color: #DDD;
+    display: none;
   }
-  @media only screen and (max-width: 960px) {
-    .br-right::after {
-      display: none;
-    }
+}
+
+.pt-8 {padding-top: 8px !important;}
+.pt-10 {padding-top: 10px !important;}
+
+.pb-0 {padding-bottom: 0 !important;}
+.pb-10 {padding-bottom: 10px !important;}
+.pb-16 {padding-bottom: 16px !important;}
+.pb-24 {padding-bottom: 24px !important;}
+
+.mb-0  {margin-bottom: 0 !important;}
+.mb-2  {margin-bottom: 2px !important;}
+.mb-6  {margin-bottom: 6px !important;}
+.mb-8  {margin-bottom: 8px !important;}
+.mb-10  {margin-bottom: 10px !important;}
+.mb-12 {margin-bottom: 12px !important;}
+.mb-16 {margin-bottom: 16px !important;}
+.mb-24 {margin-bottom: 24px !important;}
+
+.px-10 {padding-left: 10px !important; padding-right: 10px !important; }
+.py-10 {padding-top: 10px !important; padding-bottom: 10px !important; }
+.py-16 {padding-top: 16px !important; padding-bottom: 16px !important; }
+
+/* wrapper */
+.grid-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* grid box */
+.grid-box {
+  display: grid;
+  margin: 0 -10px;
+  grid-template-columns: 1fr;
+}
+.grid-box.x16 {
+  grid-template-columns: repeat(16, 1fr);
+}
+.grid-box.x12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+@media only screen and (min-width: 480px) {
+  .grid-box.x16-sm {
+      grid-template-columns: repeat(16, 1fr);
   }
+  .grid-box.x12-sm {
+      grid-template-columns: repeat(12, 1fr);
+  }
+}
+@media only screen and (min-width: 640px) {
+  .grid-box.x16-md {
+      grid-template-columns: repeat(16, 1fr);
+  }
+  .grid-box.x12-md {
+      grid-template-columns: repeat(12, 1fr);
+  }
+}
+@media only screen and (min-width: 960px) {
+  .grid-box.x16-lg {
+      grid-template-columns: repeat(16, 1fr);
+  }
+  .grid-box.x12-lg {
+      grid-template-columns: repeat(12, 1fr);
+  }
+}
   
-  .pt-8 {padding-top: 8px !important;}
+.grid-item {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  min-height: 1px;
+  order: 1;
+  box-sizing: border-box;
+}
+.grid-item .grid-item {
+  padding-bottom: 0;
+}
+
+.grid-item.br-left::after {
+  left: 0;
+}
+.grid-item.br-right::after {
+  right: 0;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-6 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+@media only screen and (min-width: 480px) {
+  .grid-2-sm {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-4-sm {
+      grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-6-sm {
+      grid-template-columns: repeat(6, 1fr);
+  }
+  .grid-8-sm {
+      grid-template-columns: repeat(8, 1fr);
+  }
+}
+@media only screen and (min-width: 640px) {
+  .grid-2-md {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-4-md {
+      grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-6-md {
+      grid-template-columns: repeat(6, 1fr);
+  }
+  .grid-8-md {
+      grid-template-columns: repeat(8, 1fr);
+  }
+}
+@media only screen and (min-width: 960px) {
+  .grid-2-lg {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-4-lg {
+      grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-6-lg {
+      grid-template-columns: repeat(6, 1fr);
+  }
+  .grid-8-lg {
+      grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* spans columns */
+.sp,
+.sp-x {
+  grid-column: 1 / -1;
+}
+.sp-x2 {
+  grid-column: 2 span;
+}
+.sp-x3 {
+  grid-column: 3 span;
+}
+.sp-x4 {
+  grid-column: 4 span;
+}
+.sp-x5 {
+  grid-column: 5 span;
+}
+.sp-x6 {
+  grid-column: 6 span;
+}
+.sp-x7 {
+  grid-column: 7 span;
+}
+.sp-x8 {
+  grid-column: 8 span;
+}
+.sp-x9 {
+  grid-column: 9 span;
+}
+.sp-x10 {
+  grid-column: 10 span;
+}
+.sp-x11 {
+  grid-column: 11 span;
+}
+.sp-y {
+  grid-row: 1 / -1;
+}
+
+@media only screen and (min-width: 480px) {
+  .sp-x-sm {
+      grid-column: 1 / -1;
+  }
+  .sp-x2-sm {
+      grid-column: 2 span;
+  }
+  .sp-x3-sm {
+      grid-column: 3 span;
+  }
+  .sp-x4-sm {
+      grid-column: 4 span;
+  }
+  .sp-x5-sm {
+      grid-column: 5 span;
+  }
+  .sp-x6-sm {
+      grid-column: 6 span;
+  }
+  .sp-x7-sm {
+      grid-column: 7 span;
+  }
+  .sp-x8-sm {
+      grid-column: 8 span;
+  }
+  .sp-x9-sm {
+      grid-column: 9 span;
+  }
+  .sp-x10-sm {
+      grid-column: 10 span;
+  }
+  .sp-x11-sm {
+      grid-column: 11 span;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .sp-x-md {
+      grid-column: 1 / -1;
+  }
+  .sp-x2-md {
+      grid-column: 2 span;
+  }
+  .sp-x3-md {
+      grid-column: 3 span;
+  }
+  .sp-x4-md {
+      grid-column: 4 span;
+  }
+  .sp-x5-md {
+      grid-column: 5 span;
+  }
+  .sp-x6-md {
+      grid-column: 6 span;
+  }
+  .sp-x7-md {
+      grid-column: 7 span;
+  }
+  .sp-x8-md {
+      grid-column: 8 span;
+  }
+  .sp-x9-md {
+      grid-column: 9 span;
+  }
+  .sp-x10-md {
+      grid-column: 10 span;
+  }
+  .sp-x11-md {
+      grid-column: 11 span;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .sp-x-lg {
+      grid-column: 1 / -1;
+  }
+  .sp-x2-lg {
+      grid-column: 2 span;
+  }
+  .sp-x3-lg {
+      grid-column: 3 span;
+  }
+  .sp-x4-lg {
+      grid-column: 4 span;
+  }
+  .sp-x5-lg {
+      grid-column: 5 span;
+  }
+  .sp-x6-lg {
+      grid-column: 6 span;
+  }
+  .sp-x7-lg {
+      grid-column: 7 span;
+  }
+  .sp-x8-lg {
+      grid-column: 8 span;
+  }
+  .sp-x9-lg {
+      grid-column: 9 span;
+  }
+  .sp-x10-lg {
+      grid-column: 10 span;
+  }
+  .sp-x11-lg {
+      grid-column: 11 span;
+  }
+}
+
+/* hidden */
+.hidden {
+  visibility: hidden !important;
+  display: none !important;
+}
+@media only screen and (max-width: 480px) {
+  .hidden-sm {
+      visibility: hidden !important;
+      display: none !important;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .hidden-md {
+      visibility: hidden !important;
+      display: none !important;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .hidden-lg {
+      visibility: hidden !important;
+      display: none !important;
+  }
+}
   
-  .pb-0 {padding-bottom: 0 !important;}
-  .pb-10 {padding-bottom: 10px !important;}
-  .pb-16 {padding-bottom: 16px !important;}
-  .pb-24 {padding-bottom: 24px !important;}
-  
-  .mb-0  {margin-bottom: 0 !important;}
-  .mb-2  {margin-bottom: 2px !important;}
-  .mb-6  {margin-bottom: 6px !important;}
-  .mb-8  {margin-bottom: 8px !important;}
-  .mb-10  {margin-bottom: 10px !important;}
-  .mb-12 {margin-bottom: 12px !important;}
-  .mb-16 {margin-bottom: 16px !important;}
-  .mb-24 {margin-bottom: 24px !important;}
-  
-  .px-10 {padding-left: 10px !important; padding-right: 10px !important; }
-  .py-10 {padding-top: 10px !important; padding-bottom: 10px !important; }
-  .py-16 {padding-top: 16px !important; padding-bottom: 16px !important; }
-  
-  /* wrapper */
-  .grid-wrap {
-    position: relative;
-    display: block;
-    width: 100%;
+
+/* orders */
+.order-0 {
+  order: 0;
+}
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+@media only screen and (min-width: 480px) {
+  .order-0-sm {
+      order: 0;
   }
-  
-  /* grid box */
-  .grid-box {
-    display: grid;
-    margin: 0 -10px;
-    grid-template-columns: 1fr;
+  .order-1-sm {
+      order: 1;
   }
-  .grid-box.x16 {
-    grid-template-columns: repeat(16, 1fr);
+  .order-2-sm {
+      order: 2;
   }
-  .grid-box.x12 {
-    grid-template-columns: repeat(12, 1fr);
+}
+@media only screen and (min-width: 640px) {
+  .order-0-md {
+      order: 0;
   }
-  @media only screen and (min-width: 480px) {
-    .grid-box.x16-sm {
-        grid-template-columns: repeat(16, 1fr);
-    }
-    .grid-box.x12-sm {
-        grid-template-columns: repeat(12, 1fr);
-    }
+  .order-1-md {
+      order: 1;
   }
-  @media only screen and (min-width: 640px) {
-    .grid-box.x16-md {
-        grid-template-columns: repeat(16, 1fr);
-    }
-    .grid-box.x12-md {
-        grid-template-columns: repeat(12, 1fr);
-    }
+  .order-2-md {
+      order: 2;
   }
-  @media only screen and (min-width: 960px) {
-    .grid-box.x16-lg {
-        grid-template-columns: repeat(16, 1fr);
-    }
-    .grid-box.x12-lg {
-        grid-template-columns: repeat(12, 1fr);
-    }
+}
+@media only screen and (min-width: 960px) {
+  .order-0-lg {
+      order: 0;
   }
-    
-  .grid-item {
-    position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    min-height: 1px;
-    order: 1;
-    box-sizing: border-box;
+  .order-1-lg {
+      order: 1;
   }
-  .grid-item .grid-item {
-    padding-bottom: 0;
+  .order-2-lg {
+      order: 2;
   }
-  
-  .grid-item.br-left::after {
-    left: 0;
-  }
-  .grid-item.br-right::after {
-    right: 0;
-  }
-  
-  .grid-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .grid-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .grid-6 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .grid-8 {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  @media only screen and (min-width: 480px) {
-    .grid-2-sm {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .grid-4-sm {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .grid-6-sm {
-        grid-template-columns: repeat(6, 1fr);
-    }
-    .grid-8-sm {
-        grid-template-columns: repeat(8, 1fr);
-    }
-  }
-  @media only screen and (min-width: 640px) {
-    .grid-2-md {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .grid-4-md {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .grid-6-md {
-        grid-template-columns: repeat(6, 1fr);
-    }
-    .grid-8-md {
-        grid-template-columns: repeat(8, 1fr);
-    }
-  }
-  @media only screen and (min-width: 960px) {
-    .grid-2-lg {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .grid-4-lg {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .grid-6-lg {
-        grid-template-columns: repeat(6, 1fr);
-    }
-    .grid-8-lg {
-        grid-template-columns: repeat(8, 1fr);
-    }
-  }
-  
-  /* spans columns */
-  .sp,
-  .sp-x {
-    grid-column: 1 / -1;
-  }
-  .sp-x2 {
-    grid-column: 2 span;
-  }
-  .sp-x3 {
-    grid-column: 3 span;
-  }
-  .sp-x4 {
-    grid-column: 4 span;
-  }
-  .sp-x5 {
-    grid-column: 5 span;
-  }
-  .sp-x6 {
-    grid-column: 6 span;
-  }
-  .sp-x7 {
-    grid-column: 7 span;
-  }
-  .sp-x8 {
-    grid-column: 8 span;
-  }
-  .sp-x9 {
-    grid-column: 9 span;
-  }
-  .sp-x10 {
-    grid-column: 10 span;
-  }
-  .sp-x11 {
-    grid-column: 11 span;
-  }
-  .sp-y {
-    grid-row: 1 / -1;
-  }
-  
-  @media only screen and (min-width: 480px) {
-    .sp-x-sm {
-        grid-column: 1 / -1;
-    }
-    .sp-x2-sm {
-        grid-column: 2 span;
-    }
-    .sp-x3-sm {
-        grid-column: 3 span;
-    }
-    .sp-x4-sm {
-        grid-column: 4 span;
-    }
-    .sp-x5-sm {
-        grid-column: 5 span;
-    }
-    .sp-x6-sm {
-        grid-column: 6 span;
-    }
-    .sp-x7-sm {
-        grid-column: 7 span;
-    }
-    .sp-x8-sm {
-        grid-column: 8 span;
-    }
-    .sp-x9-sm {
-        grid-column: 9 span;
-    }
-    .sp-x10-sm {
-        grid-column: 10 span;
-    }
-    .sp-x11-sm {
-        grid-column: 11 span;
-    }
-  }
-  
-  @media only screen and (min-width: 640px) {
-    .sp-x-md {
-        grid-column: 1 / -1;
-    }
-    .sp-x2-md {
-        grid-column: 2 span;
-    }
-    .sp-x3-md {
-        grid-column: 3 span;
-    }
-    .sp-x4-md {
-        grid-column: 4 span;
-    }
-    .sp-x5-md {
-        grid-column: 5 span;
-    }
-    .sp-x6-md {
-        grid-column: 6 span;
-    }
-    .sp-x7-md {
-        grid-column: 7 span;
-    }
-    .sp-x8-md {
-        grid-column: 8 span;
-    }
-    .sp-x9-md {
-        grid-column: 9 span;
-    }
-    .sp-x10-md {
-        grid-column: 10 span;
-    }
-    .sp-x11-md {
-        grid-column: 11 span;
-    }
-  }
-  
-  @media only screen and (min-width: 960px) {
-    .sp-x-lg {
-        grid-column: 1 / -1;
-    }
-    .sp-x2-lg {
-        grid-column: 2 span;
-    }
-    .sp-x3-lg {
-        grid-column: 3 span;
-    }
-    .sp-x4-lg {
-        grid-column: 4 span;
-    }
-    .sp-x5-lg {
-        grid-column: 5 span;
-    }
-    .sp-x6-lg {
-        grid-column: 6 span;
-    }
-    .sp-x7-lg {
-        grid-column: 7 span;
-    }
-    .sp-x8-lg {
-        grid-column: 8 span;
-    }
-    .sp-x9-lg {
-        grid-column: 9 span;
-    }
-    .sp-x10-lg {
-        grid-column: 10 span;
-    }
-    .sp-x11-lg {
-        grid-column: 11 span;
-    }
-  }
-  
-  /* hidden */
-  .hidden {
-    visibility: hidden !important;
-    display: none !important;
-  }
-  @media only screen and (max-width: 480px) {
-    .hidden-sm {
-        visibility: hidden !important;
-        display: none !important;
-    }
-  }
-  @media only screen and (max-width: 640px) {
-    .hidden-md {
-        visibility: hidden !important;
-        display: none !important;
-    }
-  }
-  @media only screen and (max-width: 960px) {
-    .hidden-lg {
-        visibility: hidden !important;
-        display: none !important;
-    }
-  }
-    
-  
-  /* orders */
-  .order-0 {
-    order: 0;
-  }
-  .order-1 {
-    order: 1;
-  }
-  .order-2 {
-    order: 2;
-  }
-  @media only screen and (min-width: 480px) {
-    .order-0-sm {
-        order: 0;
-    }
-    .order-1-sm {
-        order: 1;
-    }
-    .order-2-sm {
-        order: 2;
-    }
-  }
-  @media only screen and (min-width: 640px) {
-    .order-0-md {
-        order: 0;
-    }
-    .order-1-md {
-        order: 1;
-    }
-    .order-2-md {
-        order: 2;
-    }
-  }
-  @media only screen and (min-width: 960px) {
-    .order-0-lg {
-        order: 0;
-    }
-    .order-1-lg {
-        order: 1;
-    }
-    .order-2-lg {
-        order: 2;
-    }
-  }
-  
-  
-  /* card */
-  .card-flex {
-    display: flex;
-    flex-direction: column;
-  }
-  .card-wrapper {
-    position: relative;
-    display: block;
-    width: 100%;
-  }
-  
-  .card {
-    position: relative;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .card + .card {
-    margin-top: 20px;
-  }
-  .card-media {
-    position: relative;
-    margin-bottom: 8px;
-  }
-  .card-media img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 0;
-  }
-  .card-body {
-    position: relative;
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card-category { }
-  .card-category span { }
-  .card-category i.icon-box { }
-  .card-title { }
-  .card-description { }
-  .card-description p { }
-  .card-info {
-    margin-top: auto;
-    font-size: 14px;
-    font-weight: 300;
-    color: #aaa;
-  }
-  
-  /* .card-big {} */
+}
+
+
+/* card */
+.card-flex {
+  display: flex;
+  flex-direction: column;
+}
+.card-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+.card + .card {
+  margin-top: 20px;
+}
+.card-media {
+  position: relative;
+  margin-bottom: 8px;
+}
+.card-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+.card-body {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-category { }
+.card-category span { }
+.card-category i.icon-box { }
+.card-title { }
+.card-description { }
+.card-description p { }
+.card-info {
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #aaa;
+}
+
+/* .card-big {} */
+.card-big .card-media {
+  margin-bottom: 0;
+}
+.card-big .card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card-big .card-info {
+  margin-top: 0;
+}
+@media only screen and (max-width: 960px) {
   .card-big .card-media {
-    margin-bottom: 0;
+      margin-bottom: 16px;
   }
-  .card-big .card-media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  .card-big .card-info {
-    margin-top: 0;
-  }
-  @media only screen and (max-width: 960px) {
-    .card-big .card-media {
-        margin-bottom: 16px;
-    }
-  }
-  
+}
   /**
    * Swiper 6.0.4
    * Most modern mobile touch slider and framework with hardware accelerated transitions
