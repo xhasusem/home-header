@@ -395,6 +395,7 @@
 .toolbar-item.active,
 .toolbar-item:hover {
     color: black;
+    color: var(--bg-color-secondary);
 }
 
 .toolbar-item span {
@@ -462,10 +463,12 @@
         left: 10px;
         padding: 0 10px;
         background-color: white;
+        background-color: var(--bg-color-primary);
     }
     .list-item:first-child::before {
         content: "";
         background-color: white;
+        background-color: var(--bg-color-primary);
         display: block;
         position: absolute;
         top: 0;
@@ -494,6 +497,7 @@
 .list-item span.active,
 .list-item span:hover {
     color: black;
+    color: var(--bg-color-secondary);
 }
 
 .header-box .header-drop {
@@ -623,11 +627,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #E91B1E;
     box-sizing: border-box;
     text-decoration: none;
     cursor: pointer;
 }
+
+.social-icon .icon {
+    display: inline-block;
+    vertical-align: middle;
+    color: #E91B1E;
+    color: var(--color-red);
+    font-size: 20px;
+}
+
 
 .social-icon img {
     display: block;
@@ -820,9 +832,11 @@
     font-family: 'SemanaSans-Medium';
 }
 .aside-social .social-icon {
-    border-color: #707070;
-    border-color: var(--color-font-500);
     margin-right: 16px;
+}
+.aside-social .social-icon .icon {
+    color: #707070;
+    color: var(--color-font-500);
 }
 .aside-social .social-icon:last-child {
     margin-right: 0;
