@@ -485,8 +485,6 @@ body {
 
 /* themes */
 .theme-dark {
-  
-
   background-color: black;
 }
 
@@ -1108,12 +1106,12 @@ hr.compact {
   flex-direction: column;
 }
 
-.card-category { }
-.card-category span { }
-.card-category i.icon-box { }
-.card-title { }
-.card-description { }
-.card-description p { }
+/* .card-category { } */
+/* .card-category span { } */
+/* .card-category i.icon-box { } */
+/* .card-title { } */
+/* .card-description { } */
+/* .card-description p { } */
 .card-info {
   margin-top: auto;
   font-size: 14px;
