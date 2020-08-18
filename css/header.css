@@ -102,6 +102,13 @@
   --bg-color-secondary: transparent;
 }
 
+.mode-transparent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
 .mode-transparent .header-top {
   --color-red: white;
 }
